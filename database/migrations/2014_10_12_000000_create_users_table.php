@@ -17,13 +17,11 @@ return new class extends Migration
             $table->string('last_name',30);
             $table->date('birthdate');
             $table->integer('age');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
             $table->timestamps();
         });
     }
+
+
 
     /**
      * Reverse the migrations.
